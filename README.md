@@ -1,6 +1,6 @@
 <br>
 <p align="center">
-  <u><big>|| <b>Ship Racks</b> ||</big></u>
+  <u><big>|| <b>Star Racks</b> ||</big></u>
 </p>
 <p align="center">
     <!-- Project Avatar/Logo -->
@@ -69,7 +69,7 @@
 ## 🌐 About the Project
 
 ### 📖 Description
-Aye aye Capitan, we are off on a journey of discovery and trade. We are taking our 24th Century spaceship on an adventure around the galaxy. We will trade our goods and make people see some new places along the way. We will pick up some goods on Earth and  make our way across the stars selling and stock goods at every planet. We have a cargo hold that can stock a bulk of 16 Thermoplastic Storage Containers (crates) of trade goods per slot. We are diversifying so we only stock one item per slot or less at a time. The hold has 20 slots for goods.
+Aye Capitan, we are off on a journey of discovery and trade. We are taking our 24th Century spaceship on an adventure around the galaxy. We will trade our goods and make people see some new places along the way. We will pick up some goods on Earth and  make our way across the stars selling and stock goods at every planet. We have a cargo hold that can stock a bulk of 16 Thermoplastic Storage Containers (crates) of trade goods per slot. We are diversifying so we only stock one item per slot or less at a time. The hold has 20 slots for goods.
 
 <!-- Brainstorm
 crates of goods
