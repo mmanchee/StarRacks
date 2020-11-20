@@ -23,7 +23,7 @@ function CargoDetail(props){
       <p>Name: {cargo.Name}<br />
       Description: {cargo.Description}<br />
       Crates: {cargo.Crates}<br />
-      Energy Credits: E {cargo.EnergyCredits}</p>
+      Energy Credits: {cargo.EnergyCredits} E</p>
       <button onClick = {()=> handleChangeCargoCratesButton(cargo, true, 1) }>Trade</button> {/* reduce */}
       <button onClick = {()=> handleChangeCargoCratesButton(cargo, false, 1)  }>Stock +1</button> {/* increase */}
       <button onClick = {()=> handleChangeCargoCratesButton(cargo, false, 8)  }>Stock +8</button> {/* increase */}

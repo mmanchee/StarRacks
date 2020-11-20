@@ -11,7 +11,7 @@ function ReusableForm(props) {
           defaultValue={props.Name ? props.Name : ""}
           placeholder='Enter a Name' />
           <br />
-        <input
+        <textarea
           type='text'
           name='Description'
           defaultValue={props.Description ? props.Description : ""}
@@ -23,11 +23,12 @@ function ReusableForm(props) {
           defaultValue={props.Crates ? props.Crates : ""}
           placeholder='Enter the Number Crates' /> 
           <br />
-        E <input
+        <input
           type='number'
           name='EnergyCredits'
           defaultValue={props.EnergyCredits ? props.EnergyCredits : ""}
-          placeholder='Enter a Price in Energy Credits' />
+          placeholder='Enter Energy Credits Cost' /> E
+        <br />
         <button type ='submit'>Submit</button>
         {/* Add cancel button */}
       </form>

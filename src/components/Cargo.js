@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 function Cargo(props) {
   return (
     <React.Fragment>
-      <tr>
         <div onClick = {() => props.whenCargoClicked(props.id)}>
-          <td>{props.Name}</td> 
-          <td>{props.Crates === 0 ? "Out of Stock" : props.Crates}</td>
-          <td>{props.EnergyCredits * props.Crates}</td>
+          <tr>
+            <td class="table-name">{props.Name}</td> 
+            <td class="table-other">{props.Crates === 0 ? "Out of Stock" : props.Crates}</td>
+            <td class="table-other">{props.EnergyCredits * props.Crates}</td>
+          </tr>
         </div>
-      </tr>
     </React.Fragment>
   );
 }

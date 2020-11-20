@@ -2,7 +2,6 @@ import React from "react";
 import CargoList from "./CargoList";
 import EditCargoForm from "./EditCargoForm";
 import NewCargoForm from "./NewCargoForm";
-import CargoDelete from "./CargoDelete";
 import CargoDetail from './CargoDetail';
 
 class CargoControl extends React.Component{
@@ -108,9 +107,10 @@ class CargoControl extends React.Component{
     
     return (
       <React.Fragment>
-        {this.state.cargoManifest[0] === undefined && 
-          currentlyVisibleState.props.Cargos !== undefined ? "There are no cargos currently in the store" : ""}
         {currentlyVisibleState}
+        {this.state.cargoManifest[0] === undefined && 
+          currentlyVisibleState.props.Cargos !== undefined ? "There are no cargos currently on the ship" : ""}
+        <br />
         <button onClick={this.handleClick}>{buttonText}</button>
       </React.Fragment>
     );

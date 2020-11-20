@@ -1,3 +1,7 @@
+.contain {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
 #header {
   text-align: center;
   position:fixed;
@@ -12,7 +16,7 @@
   color:rgb(202, 162, 162);
 }
 #body {
-  font-size: 25px;
+  
   margin-top: 200px;
   width: 900px;
   margin-left: auto;
@@ -29,21 +33,54 @@
   padding:8px;
 }
 
+/* Tables */
+.table-name {
+  width: 30%;
+}
+.table-other {
+  width: 20%;
+}
+
 input {
   font-size: 20px;
-  width: 250px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 400px;
   height: 30px;
+  border: 1px solid grey;
   border-radius: 10px;
   margin: 5px;
   padding: 0 10px 0 10px;
 }
 
+textarea {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 400px;
+  height: 120px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 0 10px 0 10px;
+}
 button {
   font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
   background-color: cornflowerblue;
   padding: 0 10px 0 10px;
   height: 30px;
   border-radius: 10px;
   margin: 5px;
+}
+
+/* Boxes */
+.box {
+  height: 200px;
+  width: 100%;
+  text-align: left;
+  overflow-y: scroll;
+  margin-top: 2% 0 2% 5%;
+}
+.inner-box {
+  margin: 2% 5% 2% 5%;
 }
