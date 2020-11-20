@@ -7,7 +7,7 @@ function Cargo(props) {
       <tr>
         <div onClick = {() => props.whenCargoClicked(props.id)}>
           <td>{props.Name}</td> 
-          <td>{props.Quantity === 0 ? "Out of Stock" : props.Quantity}</td>
+          <td>{props.Crates === 0 ? "Out of Stock" : props.Crates}</td>
         </div>
       </tr>
     </React.Fragment>
@@ -17,7 +17,7 @@ function Cargo(props) {
 Cargo.propTypes = {
   Name: PropTypes.string.isRequired,
   Description: PropTypes.string,
-  Quantity: PropTypes.number.isRequired,
+  Crates: PropTypes.number.isRequired,
   Price: PropTypes.number.isRequired,
   id: PropTypes.string,
   whenCargoClicked: PropTypes.func
