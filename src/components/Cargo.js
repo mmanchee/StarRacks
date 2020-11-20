@@ -10,6 +10,7 @@ function Cargo(props) {
             <td class="table-other">{props.Crates === 0 ? "Out of Stock" : props.Crates}</td>
             <td class="table-other">{props.EnergyCredits * props.Crates}</td>
           </tr>
+          <hr />
         </div>
     </React.Fragment>
   );

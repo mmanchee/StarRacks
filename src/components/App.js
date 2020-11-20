@@ -10,8 +10,10 @@ function App() {
         <div id="header">
           <Header />
         </div>
-        <div id="body">
-          <CargoControl />
+        <div id="pad">
+          <div id="inner-pad">
+            <CargoControl />
+          </div>
         </div>
         <div id="footer">
           <Footer />

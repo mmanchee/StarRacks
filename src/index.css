@@ -1,6 +1,8 @@
 .contain {
   font-family: 'Times New Roman', Times, serif;
   font-size: 25px;
+  background-color: darkblue;
+  color: antiquewhite;
 }
 #header {
   text-align: center;
@@ -15,12 +17,15 @@
   font-size: 50px;
   color:rgb(202, 162, 162);
 }
-#body {
-  
+#pad {
+  background-color: grey;
   margin-top: 200px;
   width: 900px;
   margin-left: auto;
   margin-right: auto;
+}
+#inner-pad {
+  background-color: black;
 }
 #footer {
   text-align: center;
@@ -34,11 +39,20 @@
 }
 
 /* Tables */
+.table-h-name {
+  font-weight: 800;
+  padding-left: 40px;
+  width: 400px;
+}
+.table-h-other {
+  font-weight: 800;
+  width: 200px;
+}
 .table-name {
-  width: 40%;
+  width: 400px;
 }
 .table-other {
-  width: 30%;
+  width: 200px;
 }
 
 input {
@@ -75,7 +89,7 @@ button {
 
 /* Boxes */
 .box {
-  height: 200px;
+  height: 300px;
   width: 100%;
   text-align: left;
   overflow-y: scroll;
