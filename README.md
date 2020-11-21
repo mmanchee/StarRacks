@@ -5,8 +5,8 @@
 <p align="center">
     <!-- Project Avatar/Logo -->
     <br>
-     <a href="https://github.com/mmanchee/HFSclient">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRg8aIzTS1I4DgL0ebgoa0vOWW16cXBqY4JBw&usqp=CAU">
+     <a href="https://github.com/mmanchee/StarRacks">
+        <img src="./src/img/StarRacksLogo.png">
     </a>
     </a>
     <p align="center">
@@ -20,20 +20,20 @@
     </p>
     <!-- Project Shields -->
     <p align="center">
-        <a href="https://github.com/mmanchee/HFSclient/graphs/contributors">
-            <img src="https://img.shields.io/github/contributors/mmanchee/HFSclient.svg?style=plastic">
+        <a href="https://github.com/mmanchee/StarRacks/graphs/contributors">
+            <img src="https://img.shields.io/github/contributors/mmanchee/StarRacks.svg?style=plastic">
         </a>
         ¨
-        <a href="https://github.com/mmanchee/HFSclient/stargazers">
-            <img src="https://img.shields.io/github/stars/mmanchee/HFSclient.svg?color=yellow&style=plastic">
+        <a href="https://github.com/mmanchee/StarRacks/stargazers">
+            <img src="https://img.shields.io/github/stars/mmanchee/StarRacks.svg?color=yellow&style=plastic">
         </a>
         ¨
-        <a href="https://github.com/mmanchee/HFSclient/issues">
-            <img src="https://img.shields.io/github/issues/mmanchee/HFSclient?style=plastic">
+        <a href="https://github.com/mmanchee/StarRacks/issues">
+            <img src="https://img.shields.io/github/issues/mmanchee/StarRacks?style=plastic">
         </a>
         ¨
-        <a href="https://github.com/mmanchee/HFSclient/blob/master/LICENSE.txt">
-            <img src="https://img.shields.io/github/license/mmanchee/HFSclient?color=orange&style=plastic">
+        <a href="https://github.com/mmanchee/StarRacks/blob/master/LICENSE.txt">
+            <img src="https://img.shields.io/github/license/mmanchee/StarRacks?color=orange&style=plastic">
         </a>
         ¨
     </p>
@@ -44,9 +44,9 @@
 
 <!-- Project Links -->
 <p align="center">
-    <a href="https://github.com/mmanchee/ship-racks"><big>Project Docs</big></a> ·
-    <a href="https://github.com/mmanchee/ship-racks/issues"><big>Report Bug</big></a> ·
-    <a href="https://github.com/mmanchee/ship-racks/issues"><big>Request Feature</big></a>
+    <a href="https://github.com/mmanchee/StarRacks"><big>Project Docs</big></a> ·
+    <a href="https://github.com/mmanchee/StarRacks/issues"><big>Report Bug</big></a> ·
+    <a href="https://github.com/mmanchee/StarRacks/issues"><big>Request Feature</big></a>
 </p>
 ------------------------------
 
@@ -93,6 +93,9 @@ cant go below 0
 
 ## 🏁 Design
 
+<a href="https://github.com/mmanchee/StarRacks">
+    <img src="./src/img/StarRacksDia.png">
+</a>
 
 ### 📋 Prerequisites
 
