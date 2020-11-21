@@ -7,13 +7,16 @@ function App() {
   return (
     <React.Fragment>
       <div class="contain">
+      
         <div id="header">
           <Header />
         </div>
         <div id="pad">
+          <div id="inner-pad-padding"></div>
           <div id="inner-pad">
             <CargoControl />
           </div>
+          <div id="inner-pad-padding"></div>
         </div>
         <div id="footer">
           <Footer />
