@@ -3,7 +3,7 @@ import React from "react";
 function Header() {
   return (
     <React.Fragment>
-      <p>Star Racks</p>
+      <p id="header-title">Star Racks</p>
     </React.Fragment>
   );
 }

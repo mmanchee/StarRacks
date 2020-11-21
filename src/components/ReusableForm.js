@@ -29,7 +29,7 @@ function ReusableForm(props) {
           defaultValue={props.EnergyCredits ? props.EnergyCredits : ""}
           placeholder='Enter Energy Credits Cost' /> E
         <br />
-        <button type ='submit'>Submit</button>
+        <button type ='submit'>{props.buttonText}</button>
         {/* Add cancel button */}
       </form>
     </React.Fragment>

@@ -7,7 +7,6 @@ function App() {
   return (
     <React.Fragment>
       <div class="contain">
-      
         <div id="header">
           <Header />
         </div>
@@ -16,7 +15,6 @@ function App() {
           <div id="inner-pad">
             <CargoControl />
           </div>
-          <div id="inner-pad-padding"></div>
         </div>
         <div id="footer">
           <Footer />

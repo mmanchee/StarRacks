@@ -107,11 +107,12 @@ class CargoControl extends React.Component{
     
     return (
       <React.Fragment>
+        <div class="nav-button">
+          <button  onClick={this.handleClick}>{buttonText}</button>
+        </div>
         {currentlyVisibleState}
         {this.state.cargoManifest[0] === undefined && 
           currentlyVisibleState.props.Cargos !== undefined ? "There are no cargos currently on the ship" : ""}
-        <br />
-        <button onClick={this.handleClick}>{buttonText}</button>
       </React.Fragment>
     );
   }
