@@ -42,15 +42,18 @@ class CargoControl extends React.Component{
 
   handleClick = () => {  // sets state to normal
     if (this.state.selectedCargo != null) {
+      console.log(this.state.selectedCargo, "if");
       this.setState({
         formVisibleOnPage: false,
         selectedCargo: null,
         editing: false
       });
     } else {
-      this.setState(prevState => ({
-        formVisibleOnPage: !prevState.formVisibleOnPage,
-      }));
+      if(this.state.cargoManifest.length < 20) {
+        this.setState(prevState => ({
+          formVisibleOnPage: !prevState.formVisibleOnPage,
+        }));
+      }
     }
   }
   // Detail
@@ -102,7 +105,11 @@ class CargoControl extends React.Component{
       currentlyVisibleState = <CargoList 
         Cargos={this.state.cargoManifest} 
         onCargoSelection={this.handleChangingSelectedCargo} />;
-      buttonText = "Add Cargo";
+      if (this.state.cargoManifest.length > 19) {
+        buttonText = "Cargo Bay if Full";
+      } else {
+        buttonText = "Add Cargo";
+      }
     }
     
     return (
@@ -111,7 +118,7 @@ class CargoControl extends React.Component{
           <button  onClick={this.handleClick}>{buttonText}</button>
         </div>
         {currentlyVisibleState}
-        {this.state.cargoManifest[0] === undefined && 
+        {this.state.cargoManifest.length === 0 && 
           currentlyVisibleState.props.Cargos !== undefined ? "There are no cargos currently on the ship" : ""}
       </React.Fragment>
     );

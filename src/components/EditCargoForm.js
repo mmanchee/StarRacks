@@ -10,7 +10,7 @@ function EditCargoForm (props) {
     props.onEditCargo({
       Name: event.target.Name.value, 
       Description: event.target.Description.value, 
-      Crates: event.target.Crates.value < 0 ? 0 : event.target.Crates.value,
+      Crates: event.target.Crates.value,
       EnergyCredits: event.target.EnergyCredits.value,
       id: cargo.id});
   }
