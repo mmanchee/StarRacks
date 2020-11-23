@@ -69,7 +69,7 @@
 ## 🌐 About the Project
 
 ### 📖 Description
-Capitan, it's time for a journey of discovery and trade. We are taking our 24th Century Intergalactic Quantum Warp Vessel (spaceship) on an adventure around the galaxy. Trade our goods for Energy Credits (E) and seeing some new places along the way, like the water based ships of a millennium ago. We will pick up some goods on Earth and make our way across the stars, selling and stock goods at every planet. Unfortunately our Spatial Matter Calibrator (shrinkray) is broken, so we only have room in the cargo hold for 32 Thermoplastic Liqui-Tite Modules (crates) of trade goods per slot. Diversification of our cargo is the key to more Credits, so we only want to stock one item per slot at a time. The hold has 20 slots for all the trade goods. So what do you say say Captain... Engage! (queue scifi music)
+Capitan, it's time for a journey of discovery and trade. We are taking our 24th Century Intergalactic Alcubierre Warp Vessel (spaceship) on an adventure around the galaxy. Trade our goods for Energy Credits (E) and seeing some new places along the way, like the water based ships of a millennium ago. We will pick up some goods on Earth and make our way across the stars, selling and stock goods at every planet. Unfortunately our Spatial Matter Calibrator (shrinkray) is broken, so we only have room in the cargo hold for 32 Thermoplastic Liqui-Tite Modules (crates) of trade goods per slot. Diversification of our cargo is the key to more Credits, so we only want to stock one item per slot at a time. The hold has 20 slots for all the trade goods. So what do you say say Captain... Engage! (queue scifi music)
 
 <!-- Brainstorm
 crates of goods
