@@ -21,7 +21,7 @@ function ReusableForm(props) {
           type='number'
           name='Crates'
           min='0'
-          max='16'
+          max='32'
           defaultValue={props.Crates ? props.Crates : ""}
           placeholder='Enter the Number Crates' /> 
           <br />
