@@ -8,7 +8,6 @@
      <a href="https://github.com/mmanchee/StarRacks">
         <img src="./src/img/StarRacksLogo.png">
     </a>
-    </a>
     <p align="center">
       ___________________________
     </p>
