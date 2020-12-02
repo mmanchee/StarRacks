@@ -17,7 +17,7 @@ function NewCargoForm(props) {
 
   return (
     <React.Fragment>
-      <div class="reusable-input">
+      <div className="reusable-input">
         <ReusableForm
           formSubmissionHandler = {handleNewCargoFormSubmission}
           buttonText = "Add Cargo" />

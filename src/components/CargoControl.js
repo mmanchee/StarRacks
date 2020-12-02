@@ -42,7 +42,6 @@ class CargoControl extends React.Component{
 
   handleClick = () => {  // sets state to normal
     if (this.state.selectedCargo != null) {
-      console.log(this.state.selectedCargo, "if");
       this.setState({
         formVisibleOnPage: false,
         selectedCargo: null,
@@ -114,8 +113,8 @@ class CargoControl extends React.Component{
     
     return (
       <React.Fragment>
-        <div class="nav-button">
-          <button  onClick={this.handleClick}>{buttonText}</button>
+        <div className="nav-button">
+          <button onClick={this.handleClick}>{buttonText}</button>
         </div>
         {currentlyVisibleState}
         {this.state.cargoManifest.length === 0 && 

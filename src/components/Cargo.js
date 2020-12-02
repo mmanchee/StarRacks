@@ -5,12 +5,13 @@ function Cargo(props) {
   return (
     <React.Fragment>
         <div onClick = {() => props.whenCargoClicked(props.id)}>
-          <tr>
-            <td class="table-name">{props.Name}</td> 
-            <td class="table-other">{props.Crates === 0 ? "Out of Stock" : props.Crates}</td>
-            <td class="table-other">{props.EnergyCredits * props.Crates}</td>
-          </tr>
-          <hr />
+          <div className="table-row">
+            <div>
+              <div className="table-name">{props.Name}</div> 
+              <div className="table-other">{props.Crates === 0 ? "Out of Stock" : props.Crates}</div>
+              <div className="table-other">{props.EnergyCredits * props.Crates}</div>
+            </div>
+          </div>
         </div>
     </React.Fragment>
   );

@@ -6,7 +6,7 @@ import CargoControl from "./CargoControl";
 function App() {
   return (
     <React.Fragment>
-      <div class="contain">
+      <div className="contain">
         <div id="header">
           <Header />
         </div>

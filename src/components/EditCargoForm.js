@@ -16,13 +16,16 @@ function EditCargoForm (props) {
   }
   return (
     <React.Fragment>
-      <ReusableForm
-        Name={cargo.Name} 
-        Description={cargo.Description} 
-        Crates={cargo.Crates}
-        EnergyCredits={cargo.EnergyCredits}
-        formSubmissionHandler = {handleEditCargoFormSubmission}
-        buttonText="Update Cargo" />
+      <div className="reusable-input">
+        <ReusableForm
+          Name={cargo.Name} 
+          Description={cargo.Description} 
+          Crates={parseInt(cargo.Crates)}
+          EnergyCredits={parseInt(cargo.EnergyCredits)}
+          formSubmissionHandler = {handleEditCargoFormSubmission}
+          buttonText="Update Cargo" />
+      </div>
+      
     </React.Fragment>
   );
 }

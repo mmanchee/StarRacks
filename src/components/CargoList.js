@@ -6,11 +6,11 @@ import PropTypes from 'prop-types';
 function CargoList(props) {
   return (
     <React.Fragment>
-      <td class="table-h-name">Name</td>
-      <td class="table-h-other">Crates</td>
-      <td class="table-h-other">Total E</td>
-      <div class="box">
-        <div class="inner-box">
+      <div className="table-h-name">Name</div>
+      <div className="table-h-other">Crates</div>
+      <div className="table-h-other">Total E</div>
+      <div className="box">
+        <div className="inner-box">
           {props.Cargos.map((cargo) => 
           <Cargo
             whenCargoClicked = {props.onCargoSelection}
