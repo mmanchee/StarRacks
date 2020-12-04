@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import {v4} from 'uuid'
+import React from 'react';
+import PropTypes from 'prop-types';
+import {v4} from 'uuid';
 import ReusableForm from "./ReusableForm";
 
 function NewCargoForm(props) {
@@ -23,8 +23,8 @@ function NewCargoForm(props) {
           buttonText = "Add Cargo" />
       </div>
     </React.Fragment>
-  )
-};
+  );
+}
 
 NewCargoForm.propTypes = {
   onNewCargoCreation: PropTypes.func

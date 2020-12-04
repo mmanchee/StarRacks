@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 import ReusableForm from "./ReusableForm";
 
 function EditCargoForm (props) {
-  const { cargo } = props;
-
+  console.log("props E ", props);
   function handleEditCargoFormSubmission(event) {
     event.preventDefault();
     props.onEditCargo({
@@ -12,16 +11,17 @@ function EditCargoForm (props) {
       Description: event.target.Description.value, 
       Crates: event.target.Crates.value,
       EnergyCredits: event.target.EnergyCredits.value,
-      id: cargo.id});
+      id: props.id
+    });
   }
   return (
     <React.Fragment>
       <div className="reusable-input">
         <ReusableForm
-          Name={cargo.Name} 
-          Description={cargo.Description} 
-          Crates={parseInt(cargo.Crates)}
-          EnergyCredits={parseInt(cargo.EnergyCredits)}
+          Name={props.cargo.Name} 
+          Description={props.cargo.Description} 
+          Crates={parseInt(props.cargo.Crates)}
+          EnergyCredits={parseInt(props.cargo.EnergyCredits)}
           formSubmissionHandler = {handleEditCargoFormSubmission}
           buttonText="Update Cargo" />
       </div>
@@ -31,6 +31,11 @@ function EditCargoForm (props) {
 }
 
 EditCargoForm.propTypes = {
+  Name: PropTypes.string.isRequired,
+  Description: PropTypes.string,
+  Crates: PropTypes.number.isRequired,
+  EnergyCredits: PropTypes.number.isRequired,
+  id: PropTypes.string,
   onEditCargo: PropTypes.func
 };
 

@@ -7,13 +7,13 @@ import CargoDetail from './CargoDetail';
 class CargoControl extends React.Component{
   
   constructor(props){
-    super(props)
+    super(props);
     this.state = {
       formVisibleOnPage: false,
       cargoManifest: [],
       selectedCargo: null,
       editing: false
-    }
+    };
   }
   //event handlers
   // Edit
@@ -86,7 +86,8 @@ class CargoControl extends React.Component{
     if (this.state.editing) { // edit
       currentlyVisibleState = <EditCargoForm 
         cargo = {this.state.selectedCargo} 
-        onEditCargo =  {this.handleEditingCargoInManifest}/>
+        onEditCargo =  {this.handleEditingCargoInManifest}
+      />;
       buttonText = "Return to Cargo Manifest";
     } else if (this.state.selectedCargo !== null) { // delete and edit
       currentlyVisibleState = <CargoDetail 
@@ -94,16 +95,18 @@ class CargoControl extends React.Component{
         onClickingDelete = {this.handleDeletingCargo} 
         onClickingEdit = {this.handleEditClick}
         onChangeCargoCratesClick = {this.handleChangeCargoCratesClick} 
-        />
+      />;
       buttonText = "Return to Cargo Manifest";
     } else if (this.state.formVisibleOnPage) { // catch is set
       currentlyVisibleState = <NewCargoForm 
-        onNewCargoCreation={this.handleAddingNewCargoToManifest} />
+        onNewCargoCreation={this.handleAddingNewCargoToManifest} 
+      />;
       buttonText = "Return to Cargo Manifest";
     } else {                                // default
       currentlyVisibleState = <CargoList 
         Cargos={this.state.cargoManifest} 
-        onCargoSelection={this.handleChangingSelectedCargo} />;
+        onCargoSelection={this.handleChangingSelectedCargo} 
+      />;
       if (this.state.cargoManifest.length > 19) {
         buttonText = "Cargo Bay if Full";
       } else {

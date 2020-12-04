@@ -12,7 +12,7 @@ function CargoDetail(props){
       Crates: operation ? cargo.Crates === 0 ? 0 : 
         cargo.Crates = parseInt(cargo.Crates) - change : 
         (parseInt(cargo.Crates) + change) > 32 ? cargo.Crates = 32 :
-        cargo.Crates = parseInt(cargo.Crates) + change, 
+          cargo.Crates = parseInt(cargo.Crates) + change, 
       EnergyCredits: cargo.EnergyCredits,
       id: cargo.id      
     });

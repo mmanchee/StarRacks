@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function ReusableForm(props) {
+  console.log("props R ", props);
   return (
     <React.Fragment>
       <form onSubmit={props.formSubmissionHandler}>
@@ -11,27 +12,27 @@ function ReusableForm(props) {
           defaultValue={props.Name ? props.Name : ""}
           placeholder='Enter a Name' 
           required />
-          <br />
+        <br />
         <textarea
           type='text'
           name='Description'
           defaultValue={props.Description ? props.Description : ""}
           placeholder='Enter a Description' 
           required />
-          <br />
+        <br />
         <input
           type='number'
           name='Crates'
           min='0'
           max='32'
-          defaultValue={props.Crates ? props.Crates : ""}
+          defaultValue={parseInt(props.Crates) ? parseInt(props.Crates) : ""}
           placeholder='Enter the Number Crates' 
           required /> 
-          <br />
+        <br />
         <input
           type='number'
           name='EnergyCredits'
-          defaultValue={props.EnergyCredits ? props.EnergyCredits : ""}
+          defaultValue={parseInt(props.EnergyCredits) ? parseInt(props.EnergyCredits) : ""}
           placeholder='Enter Energy Credits Cost' 
           required /> E
         <br />
@@ -39,12 +40,16 @@ function ReusableForm(props) {
         {/* Add cancel button */}
       </form>
     </React.Fragment>
-    );
-  }
+  );
+}
   
-  ReusableForm.propTypes = {
-    formSubmissionHandler: PropTypes.func,
-    buttonText: PropTypes.string
-  };
+ReusableForm.propTypes = {
+  formSubmissionHandler: PropTypes.func,
+  buttonText: PropTypes.string,
+  EnergyCredits: PropTypes.number,
+  Name: PropTypes.string,
+  Description: PropTypes.string,
+  Crates: PropTypes.number,
+};
   
-  export default ReusableForm;
+export default ReusableForm;

@@ -1,5 +1,5 @@
 import React from "react";
-import Cargo from './Cargo'
+import Cargo from './Cargo';
 import PropTypes from 'prop-types';
 
 
@@ -12,14 +12,14 @@ function CargoList(props) {
       <div className="box">
         <div className="inner-box">
           {props.Cargos.map((cargo) => 
-          <Cargo
-            whenCargoClicked = {props.onCargoSelection}
-            Name={cargo.Name}
-            Description={cargo.Description}
-            Crates={cargo.Crates}
-            EnergyCredits={cargo.EnergyCredits}
-            id={cargo.id}
-            key={cargo.id}/>
+            <Cargo
+              whenCargoClicked = {props.onCargoSelection}
+              Name={cargo.Name}
+              Description={cargo.Description}
+              Crates={parseInt(cargo.Crates)}
+              EnergyCredits={parseInt(cargo.EnergyCredits)}
+              id={cargo.id}
+              key={cargo.id}/>
           )}
         </div>
       </div>
@@ -27,7 +27,7 @@ function CargoList(props) {
   );
 }
 
-Cargo.propTypes = {
+CargoList.propTypes = {
   Cargos: PropTypes.array,
   onCargoSelection: PropTypes.func
 };
